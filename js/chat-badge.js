@@ -27,8 +27,9 @@ function getChatBadgeCount(chat, session) {
 
 function updateChatBadge() {
     const session = getChatBadgeSession();
-    const button = document.getElementById("clientChatButton") || [...document.querySelectorAll(".nav-item")]
-        .find(item => item.dataset.page === "chat_comerciante.html");
+    const button =
+    document.getElementById("clientChatButton") ||
+    document.querySelector('.bottom-navigation .nav-item[href="chat_comerciante.html"]');
     if (!button || !session) return;
 
     const isMerchant = session.profile === "comerciante";

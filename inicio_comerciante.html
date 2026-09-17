@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/inicio_comerciante.css">
     <link rel="stylesheet" href="css/comerciante-navigation.css">
+    <link rel="stylesheet" href="css/navigation.css">
 </head>
 
 <body>
@@ -30,26 +31,14 @@
                 <!-- Logo -->
                 <div class="logo-area">
 
-                    <img 
-                        src="assets/images/logo.png"
-                        alt="Moda Center Santa Cruz"
-                        class="logo"
-                    >
+                    <img src="assets/images/logo.png" alt="Moda Center Santa Cruz" class="logo">
 
                 </div>
 
                 <!-- Notificação -->
-                <button 
-                    class="notification-button"
-                    id="notificationButton"
-                    aria-label="Notificações"
-                >
+                <button class="notification-button" id="notificationButton" aria-label="Notificações">
 
-                    <img
-                        src="assets/images/notificacao.png"
-                        alt=""
-                        class="notification-icon"
-                    >
+                    <img src="assets/images/notificacao.png" alt="" class="notification-icon">
 
                 </button>
 
@@ -73,10 +62,7 @@
 
             <div class="search-container">
 
-                <button 
-                    class="search-button"
-                    aria-label="Pesquisar"
-                >
+                <button class="search-button" aria-label="Pesquisar">
 
                     <span class="search-icon">
                         🔍
@@ -84,12 +70,8 @@
 
                 </button>
 
-                <input
-                    type="search"
-                    class="search-input"
-                    placeholder="O que você está procurando?"
-                    aria-label="Pesquisar produtos"
-                >
+                <input type="search" class="search-input" placeholder="O que você está procurando?"
+                    aria-label="Pesquisar produtos">
 
             </div>
 
@@ -155,13 +137,14 @@
                 </div>
 
 
-                 <!-- Preenchido dinamicamente por js/inicio_comerciante.js com os
+                <!-- Preenchido dinamicamente por js/inicio_comerciante.js com os
                      produtos que o próprio comerciante cadastrou. Enquanto não
                      houver produtos, mostra um convite para cadastrar o
                      primeiro (ver a função que usa "productsList" no script). -->
                 <div class="products-list" id="productsList"></div>
 
-                <a class="orders-entry-link" href="pedidos_comerciante.html"><strong>📦 Pedidos dos clientes</strong><span>Veja nome, quantidade e itens da sua loja.</span><b>›</b></a>
+                <a class="orders-entry-link" href="pedidos_comerciante.html"><strong>📦 Pedidos dos
+                        clientes</strong><span>Veja nome, quantidade e itens da sua loja.</span><b>›</b></a>
 
             </section>
 
@@ -188,10 +171,18 @@
 
 
                 <div class="highlights-list management-shortcuts">
-                    <a class="management-shortcut" href="filtro_comerciante.html"><span class="management-icon">▦</span><strong>Ver produtos</strong><small>Gerencie seu catálogo</small><b>›</b></a>
-                    <a class="management-shortcut" href="produto-novo.html"><span class="management-icon">＋</span><strong>Novo produto</strong><small>Cadastre um item</small><b>›</b></a>
-                    <a class="management-shortcut" href="pedidos_comerciante.html"><span class="management-icon">📦</span><strong>Pedidos</strong><small>Acompanhe suas vendas</small><b>›</b></a>
-                    <a class="management-shortcut" href="filtro_comerciante.html"><span class="management-icon">⌕</span><strong>Ver categorias</strong><small>Filtre seu catálogo</small><b>›</b></a>
+                    <a class="management-shortcut" href="filtro_comerciante.html"><span
+                            class="management-icon">▦</span><strong>Ver produtos</strong><small>Gerencie seu
+                            catálogo</small><b>›</b></a>
+                    <a class="management-shortcut" href="produto-novo.html"><span
+                            class="management-icon">＋</span><strong>Novo produto</strong><small>Cadastre um
+                            item</small><b>›</b></a>
+                    <a class="management-shortcut" href="pedidos_comerciante.html"><span
+                            class="management-icon">📦</span><strong>Pedidos</strong><small>Acompanhe suas
+                            vendas</small><b>›</b></a>
+                    <a class="management-shortcut" href="filtro_comerciante.html"><span
+                            class="management-icon">⌕</span><strong>Ver categorias</strong><small>Filtre seu
+                            catálogo</small><b>›</b></a>
                 </div>
 
             </section>
@@ -230,10 +221,7 @@
              BOTÃO FLUTUANTE
         ====================================================== -->
 
-        <button
-            class="floating-button"
-            aria-label="Adicionar"
-        >
+        <button class="floating-button" aria-label="Adicionar">
 
             <span>
                 +
@@ -248,24 +236,30 @@
         ====================================================== -->
 
         <!-- Menu inferior padronizado a partir da tela de perfil. -->
-        <nav class="bottom-navigation">
-            <button class="nav-item active" data-page="inicio_comerciante.html">
+        <nav class="bottom-navigation" aria-label="Navegação do comerciante">
+
+            <a class="nav-item active" href="inicio_comerciante.html">
                 <span class="nav-icon">🏠</span>
                 <span class="nav-label">Início</span>
-            </button>
-            <button class="nav-item" data-page="chat_comerciante.html">
+            </a>
+
+            <a class="nav-item" href="chat_comerciante.html">
                 <span class="nav-icon">💬</span>
                 <span class="nav-label">Chat</span>
-            </button>
+            </a>
+
             <div class="navigation-space"></div>
-            <button class="nav-item" data-page="marketing_comerciante.html">
+
+            <a class="nav-item" href="marketing_comerciante.html">
                 <span class="nav-icon">📣</span>
                 <span class="nav-label">Marketing</span>
-            </button>
-            <button class="nav-item" data-page="perfil_comerciante.html">
+            </a>
+
+            <a class="nav-item" href="perfil_comerciante.html">
                 <span class="nav-icon">👤</span>
                 <span class="nav-label">Perfil</span>
-            </button>
+            </a>
+
         </nav>
 
     </main>

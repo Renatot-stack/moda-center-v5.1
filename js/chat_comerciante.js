@@ -117,7 +117,7 @@ function getUnreadCount(chat) {
 }
 function getTotalUnreadCount() { return getVisibleChats().reduce((total, chat) => total + getUnreadCount(chat), 0); }
 function renderChatBadge() {
-    const chatButton = [...document.querySelectorAll(".nav-item")].find(button => button.dataset.page === "chat_comerciante.html");
+    const chatButton = document.querySelector('.bottom-navigation .nav-item[href="chat_comerciante.html"]');
     if (!chatButton) return;
     let badge = chatButton.querySelector(".chat-unread-badge");
     const total = getTotalUnreadCount();

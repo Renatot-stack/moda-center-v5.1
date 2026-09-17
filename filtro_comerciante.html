@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#5720B7">
     <title>Filtro - Moda Center</title>
     <link rel="stylesheet" href="css/filtro_comerciante.css">
-    <link rel="stylesheet" href="css/comerciante-navigation.css">
+    <link rel="stylesheet" href="css/navigation.css">
 </head>
 
 <body>
@@ -73,9 +73,11 @@
                     <fieldset class="edit-variations">
                         <legend>Variações de cor e tamanho</legend>
                         <div id="editVariationRows" class="variation-rows"></div>
-                        <button id="addEditVariation" class="secondary-button" type="button">+ Adicionar variação</button>
+                        <button id="addEditVariation" class="secondary-button" type="button">+ Adicionar
+                            variação</button>
                     </fieldset>
-                    <label class="wholesale-toggle"><input id="editWholesaleEnabled" type="checkbox"><span>Vendo este produto no atacado</span></label>
+                    <label class="wholesale-toggle"><input id="editWholesaleEnabled" type="checkbox"><span>Vendo este
+                            produto no atacado</span></label>
                     <div id="editWholesaleFields" hidden>
                         <label class="edit-field">A partir de quantas peças
                             <input id="editWholesaleMinQuantity" type="number" min="2" step="1" value="3">
@@ -97,31 +99,38 @@
 
         <div class="details-modal-backdrop" id="detailsModal" hidden>
             <section class="details-modal" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
-                <button class="modal-close details-close" id="closeDetails" type="button" aria-label="Fechar">&times;</button>
+                <button class="modal-close details-close" id="closeDetails" type="button"
+                    aria-label="Fechar">&times;</button>
                 <div id="detailsContent"></div>
             </section>
         </div>
 
         <button class="floating-button" id="addProduct" type="button" aria-label="Adicionar produto">+</button>
 
-        <nav class="bottom-navigation" aria-label="Navegação principal">
-            <button class="nav-item" type="button" data-page="inicio_comerciante.html">
+        <nav class="bottom-navigation" aria-label="Navegação do comerciante">
+
+            <a class="nav-item" href="inicio_comerciante.html">
                 <span class="nav-icon">🏠</span>
                 <span class="nav-label">Início</span>
-            </button>
-            <button class="nav-item" type="button" data-page="chat_comerciante.html">
+            </a>
+
+            <a class="nav-item" href="chat_comerciante.html">
                 <span class="nav-icon">💬</span>
                 <span class="nav-label">Chat</span>
-            </button>
+            </a>
+
             <div class="navigation-space"></div>
-            <button class="nav-item" type="button" data-page="marketing_comerciante.html">
+
+            <a class="nav-item" href="marketing_comerciante.html">
                 <span class="nav-icon">📣</span>
                 <span class="nav-label">Marketing</span>
-            </button>
-            <button class="nav-item" type="button" data-page="perfil_comerciante.html">
+            </a>
+
+            <a class="nav-item" href="perfil_comerciante.html">
                 <span class="nav-icon">👤</span>
                 <span class="nav-label">Perfil</span>
-            </button>
+            </a>
+
         </nav>
     </main>
 

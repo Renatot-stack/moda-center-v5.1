@@ -53,7 +53,20 @@
     "style-client": {
       "status": "online",
       "lastSeen": 1788973536532
+    },
+    "aac07277-5842-4586-8141-9b1840ef01ba": {
+      "status": "online",
+      "lastSeen": 1789659563625
     }
   },
-  "users": []
+  "users": [
+    {
+      "id": "aac07277-5842-4586-8141-9b1840ef01ba",
+      "name": "Renato",
+      "email": "r@e.com",
+      "password": "123456",
+      "profile": "cliente",
+      "avatar": null
+    }
+  ]
 }

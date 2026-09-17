@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#5720B7">
     <title>Central de Marketing - Moda Center</title>
     <link rel="stylesheet" href="css/marketing_comerciante.css">
-    <link rel="stylesheet" href="css/comerciante-navigation.css">
+    <link rel="stylesheet" href="css/navigation.css">
 </head>
 
 <body>
@@ -28,18 +28,11 @@
 
                 <!-- Logo -->
                 <div class="logo-area">
-                    <img
-                        src="assets/images/logo.png"
-                        alt="Moda Center Santa Cruz"
-                        class="logo"
-                    >
+                    <img src="assets/images/logo.png" alt="Moda Center Santa Cruz" class="logo">
                 </div>
 
                 <!-- Notificação -->
-                <button
-                    class="notification-button"
-                    aria-label="Notificações"
-                >
+                <button class="notification-button" aria-label="Notificações">
                     <img src="assets/images/notificacao.png" alt="" class="notification-icon">
                 </button>
 
@@ -140,8 +133,15 @@
             </div>
 
             <section class="campaign-panel" aria-live="polite">
-                <div class="campaign-heading"><div><p>ATIVAS NA SUA LOJA</p><h2>Campanhas que estão rodando</h2></div><span id="campaignCount">0</span></div>
-                <div id="campaignList" class="campaign-list"><p class="campaign-empty">Nenhuma campanha criada ainda.</p></div>
+                <div class="campaign-heading">
+                    <div>
+                        <p>ATIVAS NA SUA LOJA</p>
+                        <h2>Campanhas que estão rodando</h2>
+                    </div><span id="campaignCount">0</span>
+                </div>
+                <div id="campaignList" class="campaign-list">
+                    <p class="campaign-empty">Nenhuma campanha criada ainda.</p>
+                </div>
             </section>
 
             <!-- Banner de dicas -->
@@ -161,17 +161,28 @@
 
         <div class="campaign-backdrop" id="campaignBackdrop" hidden>
             <section class="campaign-dialog" role="dialog" aria-modal="true" aria-labelledby="campaignTitle">
-                <div class="campaign-dialog-heading"><div><p id="campaignEyebrow">NOVA CAMPANHA</p><h2 id="campaignTitle">Criar promoção</h2></div><button id="closeCampaign" type="button" aria-label="Fechar">×</button></div>
+                <div class="campaign-dialog-heading">
+                    <div>
+                        <p id="campaignEyebrow">NOVA CAMPANHA</p>
+                        <h2 id="campaignTitle">Criar promoção</h2>
+                    </div><button id="closeCampaign" type="button" aria-label="Fechar">×</button>
+                </div>
                 <form id="campaignForm">
-                    <label>Nome da campanha<input id="campaignName" type="text" required maxlength="60" placeholder="Ex.: Semana do jeans"></label>
+                    <label>Nome da campanha<input id="campaignName" type="text" required maxlength="60"
+                            placeholder="Ex.: Semana do jeans"></label>
                     <label>Desconto (%)<input id="campaignDiscount" type="number" min="1" max="90" required></label>
-                    <label>Aplicar em<select id="campaignScope"><option value="all">Todos os produtos</option><option value="category">Uma categoria</option><option value="product">Um produto</option></select></label>
+                    <label>Aplicar em<select id="campaignScope">
+                            <option value="all">Todos os produtos</option>
+                            <option value="category">Uma categoria</option>
+                            <option value="product">Um produto</option>
+                        </select></label>
                     <label id="campaignCategoryField" hidden>Categoria<select id="campaignCategory"></select></label>
                     <label id="campaignProductField" hidden>Produto<select id="campaignProduct"></select></label>
                     <div id="flashFields" hidden>
                         <label>Começa em<input id="flashStart" type="datetime-local"></label>
                         <label>Termina em<input id="flashEnd" type="datetime-local"></label>
-                        <label class="check-field"><input id="flashUntilStock" type="checkbox"> Encerrar quando o estoque acabar</label>
+                        <label class="check-field"><input id="flashUntilStock" type="checkbox"> Encerrar quando o
+                            estoque acabar</label>
                     </div>
                     <p id="campaignNote" class="campaign-note" role="status"></p>
                     <button class="campaign-save" type="submit">Ativar campanha</button>
@@ -195,29 +206,29 @@
         ====================================================== -->
 
         <!-- Menu inferior compartilhado; somente o item Marketing fica ativo nesta tela. -->
-        <nav class="bottom-navigation">
+        <nav class="bottom-navigation" aria-label="Navegação do comerciante">
 
-            <button class="nav-item" data-page="inicio_comerciante.html">
+            <a class="nav-item" href="inicio_comerciante.html">
                 <span class="nav-icon">🏠</span>
                 <span class="nav-label">Início</span>
-            </button>
+            </a>
 
-            <button class="nav-item" data-page="chat_comerciante.html">
+            <a class="nav-item" href="chat_comerciante.html">
                 <span class="nav-icon">💬</span>
                 <span class="nav-label">Chat</span>
-            </button>
+            </a>
 
             <div class="navigation-space"></div>
 
-            <button class="nav-item active" data-page="marketing_comerciante.html">
+            <a class="nav-item active" href="marketing_comerciante.html">
                 <span class="nav-icon">📣</span>
                 <span class="nav-label">Marketing</span>
-            </button>
+            </a>
 
-            <button class="nav-item" data-page="perfil_comerciante.html">
+            <a class="nav-item" href="perfil_comerciante.html">
                 <span class="nav-icon">👤</span>
                 <span class="nav-label">Perfil</span>
-            </button>
+            </a>
 
         </nav>
 
