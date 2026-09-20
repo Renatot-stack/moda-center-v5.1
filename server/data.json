@@ -37,6 +37,19 @@
         "box": "347"
       },
       "createdAt": 1788927412174
+    },
+    "38ddb658-f178-4824-9639-159084bea4a7": {
+      "name": "ww",
+      "segments": [
+        "www"
+      ],
+      "image": null,
+      "location": {
+        "sector": "ww",
+        "street": "www",
+        "box": "www"
+      },
+      "createdAt": 1789898604061
     }
   },
   "orders": [],
@@ -55,8 +68,12 @@
       "lastSeen": 1788973536532
     },
     "aac07277-5842-4586-8141-9b1840ef01ba": {
+      "status": "offline",
+      "lastSeen": 1789898561498
+    },
+    "38ddb658-f178-4824-9639-159084bea4a7": {
       "status": "online",
-      "lastSeen": 1789659563625
+      "lastSeen": 1789898934496
     }
   },
   "users": [
@@ -66,6 +83,14 @@
       "email": "r@e.com",
       "password": "123456",
       "profile": "cliente",
+      "avatar": null
+    },
+    {
+      "id": "38ddb658-f178-4824-9639-159084bea4a7",
+      "name": "Ow",
+      "email": "e@e.com",
+      "password": "123456",
+      "profile": "comerciante",
       "avatar": null
     }
   ]

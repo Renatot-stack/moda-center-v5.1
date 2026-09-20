@@ -40,51 +40,6 @@ body {
     font-size: 28px;
 }
 
-.bottom-navigation {
-    position: fixed;
-    z-index: 20;
-    right: 1px;
-    bottom: 0;
-    left: 1px;
-    width: auto;
-    max-width: none;
-    transform: none;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 18px;
-    height: 76px;
-    padding: 10px 24px;
-    background: #fff;
-    border-top: 1px solid var(--line, #ebe7f3);
-    box-shadow: 0 -8px 28px rgba(43, 26, 87, .08);
-}
-
-.nav-item {
-    position: relative;
-    min-width: 76px;
-    border: 0;
-    color: var(--muted, #7e7890);
-    background: transparent;
-}
-
-.chat-unread-badge {
-    position: absolute;
-    top: 0;
-    right: calc(50% - 27px);
-    min-width: 18px;
-    height: 18px;
-    padding: 0 5px;
-    border: 2px solid #fff;
-    border-radius: 999px;
-    color: #fff;
-    background: #e0392b;
-    font-size: 9px;
-    font-weight: 800;
-    line-height: 14px;
-    text-align: center;
-}
-
 .nav-item.active,
 .nav-item:hover {
     color: var(--purple, #5926c9);
