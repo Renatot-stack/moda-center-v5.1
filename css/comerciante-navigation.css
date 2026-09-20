@@ -49,19 +49,52 @@ body {
     color: var(--purple, #5926c9);
 }
 
-.nav-icon,
-.nav-label {
-    display: block;
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    position: relative;
+    font-family: "DM Sans", sans-serif;
 }
 
 .nav-icon {
-    margin-bottom: 4px;
+    display: block;
+    margin: 0;
     font-size: 19px;
+    line-height: 1;
 }
 
 .nav-label {
+    display: block;
+    font-family: "DM Sans", sans-serif;
     font-size: 11px;
     font-weight: 700;
+    line-height: 1.1;
+}
+
+.nav-badge {
+    position: absolute;
+    top: 1px;
+    right: calc(50% - 25px);
+    display: grid;
+    place-items: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 4px;
+    border-radius: 999px;
+    color: #fff;
+    background: #e0392b;
+    font: 700 9px/1 "DM Sans", sans-serif;
+}
+
+.client-chat-navigation {
+    width: 100%;
+}
+
+.client-chat-navigation[hidden] {
+    display: none;
 }
 
 .navigation-space {
