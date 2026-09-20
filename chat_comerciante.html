@@ -215,10 +215,21 @@
             </button>
         </nav>
 
-        <nav class="client-chat-navigation" id="clientChatNavigation" aria-label="Navegação do cliente" hidden>
-            <a class="client-chat-nav-item" href="cliente.html"><span>🛒</span><strong>Carrinho</strong><b id="clientChatCartCount">0</b></a>
-            <a class="client-chat-nav-item" href="minhas-compras.html"><span>📦</span><strong>Minhas compras</strong></a>
-            <a id="clientChatButton" class="client-chat-nav-item active" href="chat_comerciante.html"><span>💬</span><strong>Conversas</strong><b id="clientChatCount">0</b></a>
+        <nav class="bottom-navigation client-chat-navigation" id="clientChatNavigation" aria-label="Navegação do cliente" hidden>
+            <a class="nav-item" href="cliente.html">
+                <span class="nav-icon">🛒</span>
+                <span class="nav-label">Carrinho</span>
+                <b class="nav-badge" id="clientChatCartCount">0</b>
+            </a>
+            <a class="nav-item" href="minhas-compras.html">
+                <span class="nav-icon">📦</span>
+                <span class="nav-label">Minhas compras</span>
+            </a>
+            <a id="clientChatButton" class="nav-item active" href="chat_comerciante.html">
+                <span class="nav-icon">💬</span>
+                <span class="nav-label">Conversas</span>
+                <b class="nav-badge" id="clientChatCount">0</b>
+            </a>
         </nav>
 
     </main>
