@@ -115,7 +115,6 @@ body {
 .message-form input { flex: 1; height: 40px; border: 1px solid #eee; background: #f8f8f8; border-radius: 20px; outline: 0; padding: 0 15px; font-size: 11px; }
 .attachment-button { width: 35px; height: 35px; border-radius: 50%; border: 0; background: #f0ebfa; color: #5520b8; font-size: 20px; }
 .send-button { width: 40px; height: 40px; border-radius: 50%; border: 0; background: #5520b8; color: #fff; font-size: 17px; }
-/* A navegação inferior é padronizada em comerciante-navigation.css. */
 @media (min-width: 768px) {
     .chat-app, .conversation-page { width: calc(100% - 2px); max-width: none; box-shadow: 0 0 30px rgba(0,0,0,.08); }
 }
@@ -130,9 +129,6 @@ body {
     .message-form input { min-width: 0; padding-right: 12px; padding-left: 12px; }
 }
 
-@media (max-width: 520px) {
-    .client-chat-nav-item { min-width: 100px; }
-}
 
 @media (max-width: 750px) {
     body { background: #fff; }
