@@ -5,23 +5,15 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="theme-color"
-        content="#5520b8"
-    >
+    <meta name="theme-color" content="#5520b8">
 
     <title>Chats - Moda Center</title>
 
-    <link
-        rel="stylesheet"
-        href="css/chat_comerciante.css"
-    >
+    <link rel="stylesheet" href="css/chat_comerciante.css">
     <link rel="stylesheet" href="css/comerciante-navigation.css">
+    <link rel="stylesheet" href="css/navigation.css">
 
 </head>
 
@@ -47,20 +39,12 @@
 
                 <!-- LOGO -->
 
-                <img
-                    src="assets/images/logo.png"
-                    alt="Moda Center"
-                    class="chat-logo"
-                >
+                <img src="assets/images/logo.png" alt="Moda Center" class="chat-logo">
 
 
                 <!-- BOTÃO NOVA MENSAGEM -->
 
-                <button
-                    class="new-chat-button"
-                    id="newChatButton"
-                    aria-label="Nova conversa"
-                >
+                <button class="new-chat-button" id="newChatButton" aria-label="Nova conversa">
 
                     💬
 
@@ -94,21 +78,12 @@
                     ⌕
                 </span>
 
-                <input
-                    type="search"
-                    id="chatSearch"
-                    placeholder="Pesquise algo ou alguém..."
-                    autocomplete="off"
-                >
+                <input type="search" id="chatSearch" placeholder="Pesquise algo ou alguém..." autocomplete="off">
 
             </div>
 
 
-            <button
-                class="filter-button"
-                id="filterButton"
-                aria-label="Filtrar conversas"
-            >
+            <button class="filter-button" id="filterButton" aria-label="Filtrar conversas">
 
                 ☷
 
@@ -124,10 +99,7 @@
 
         <section class="conversations-section">
 
-            <div
-                class="conversations-list"
-                id="conversationsList"
-            >
+            <div class="conversations-list" id="conversationsList">
 
                 <!--
                     As conversas serão carregadas
@@ -181,11 +153,7 @@
              MENU INFERIOR
         ================================================== -->
 
-        <button
-            class="floating-button"
-            id="bottomAdd"
-            aria-label="Adicionar"
-        >
+        <button class="floating-button" id="bottomAdd" aria-label="Adicionar">
 
             <span>
                 +
@@ -215,23 +183,6 @@
             </button>
         </nav>
 
-        <nav class="bottom-navigation client-chat-navigation" id="clientChatNavigation" aria-label="Navegação do cliente" hidden>
-            <a class="nav-item" href="cliente.html">
-                <span class="nav-icon">🛒</span>
-                <span class="nav-label">Carrinho</span>
-                <b class="nav-badge" id="clientChatCartCount">0</b>
-            </a>
-            <a class="nav-item" href="minhas-compras.html">
-                <span class="nav-icon">📦</span>
-                <span class="nav-label">Minhas compras</span>
-            </a>
-            <a id="clientChatButton" class="nav-item active" href="chat_comerciante.html">
-                <span class="nav-icon">💬</span>
-                <span class="nav-label">Conversas</span>
-                <b class="nav-badge" id="clientChatCount">0</b>
-            </a>
-        </nav>
-
     </main>
 
 
@@ -240,17 +191,11 @@
          MODAL NOVA CONVERSA
     ====================================================== -->
 
-    <div
-        class="modal"
-        id="newChatModal"
-    >
+    <div class="modal" id="newChatModal">
 
         <div class="modal-content">
 
-            <button
-                class="modal-close"
-                id="closeNewChat"
-            >
+            <button class="modal-close" id="closeNewChat">
                 ×
             </button>
 
@@ -267,11 +212,7 @@
             <div class="seller-list">
 
 
-                <button
-                    class="seller-option"
-                    data-seller="Moda Bella"
-                    data-id="seller-bella"
-                >
+                <button class="seller-option" data-seller="Moda Bella" data-id="seller-bella">
 
                     <div class="seller-avatar">
                         👩🏻
@@ -293,11 +234,7 @@
 
 
 
-                <button
-                    class="seller-option"
-                    data-seller="Trend Fashion"
-                    data-id="seller-trend"
-                >
+                <button class="seller-option" data-seller="Trend Fashion" data-id="seller-trend">
 
                     <div class="seller-avatar">
                         👨🏻
@@ -319,11 +256,7 @@
 
 
 
-                <button
-                    class="seller-option"
-                    data-seller="Bella Store"
-                    data-id="seller-bella-store"
-                >
+                <button class="seller-option" data-seller="Bella Store" data-id="seller-bella-store">
 
                     <div class="seller-avatar">
                         👩🏽
@@ -356,20 +289,14 @@
          TELA DA CONVERSA
     ====================================================== -->
 
-    <section
-        class="conversation-page"
-        id="conversationPage"
-    >
+    <section class="conversation-page" id="conversationPage">
 
 
         <!-- CABEÇALHO DA CONVERSA -->
 
         <header class="conversation-header">
 
-            <button
-                class="back-button"
-                id="backToChats"
-            >
+            <button class="back-button" id="backToChats">
 
                 ‹
 
@@ -378,10 +305,7 @@
 
             <div class="conversation-user">
 
-                <div
-                    class="conversation-avatar"
-                    id="conversationAvatar"
-                >
+                <div class="conversation-avatar" id="conversationAvatar">
                     👩🏻
                 </div>
 
@@ -401,10 +325,7 @@
             </div>
 
 
-            <button
-                class="conversation-options"
-                aria-label="Opções"
-            >
+            <button class="conversation-options" aria-label="Opções">
 
                 ⋮
 
@@ -416,10 +337,7 @@
 
         <!-- MENSAGENS -->
 
-        <div
-            class="messages-container"
-            id="messagesContainer"
-        >
+        <div class="messages-container" id="messagesContainer">
 
             <!-- mensagens carregadas pelo JS -->
 
@@ -429,10 +347,7 @@
 
         <!-- DIGITANDO -->
 
-        <div
-            class="typing-indicator"
-            id="typingIndicator"
-        >
+        <div class="typing-indicator" id="typingIndicator">
 
             Comerciante está digitando...
 
@@ -442,37 +357,20 @@
 
         <!-- CAMPO DE MENSAGEM -->
 
-        <form
-            class="message-form"
-            id="messageForm"
-        >
+        <form class="message-form" id="messageForm">
 
-            <button
-                type="button"
-                class="attachment-button"
-                id="attachmentButton"
-                aria-label="Anexar"
-            >
+            <button type="button" class="attachment-button" id="attachmentButton" aria-label="Anexar">
 
                 +
 
             </button>
 
 
-            <input
-                type="text"
-                id="messageInput"
-                placeholder="Digite uma mensagem..."
-                autocomplete="off"
-                maxlength="500"
-            >
+            <input type="text" id="messageInput" placeholder="Digite uma mensagem..." autocomplete="off"
+                maxlength="500">
 
 
-            <button
-                type="submit"
-                class="send-button"
-                aria-label="Enviar mensagem"
-            >
+            <button type="submit" class="send-button" aria-label="Enviar mensagem">
 
                 ➤
 
